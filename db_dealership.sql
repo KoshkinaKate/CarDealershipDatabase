@@ -30,17 +30,21 @@ Sold BOOLEAN
 );
 
 CREATE TABLE inventory(
-DealershipID INT,
-Vin VARCHAR(30)
+DealershipID INT NOT NULL,
+Vin VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE sales_contracts(
 SaleID INT AUTO_INCREMENT PRIMARY KEY,
 SalesTaxAmount FLOAT,
 RecordingFee FLOAT,
-ProcessingFee FLOAT,
+ProcessingFee FLOAT NOT NULL,
 FOREIGN KEY (Vin) REFERENCES vehicles(Vin)
 );
 
-
-
+CREATE TABLE lease_contracts(
+LeaseID INT AUTO_INCREMENT PRIMARY KEY,
+ExpectedEndingValue FLOAT,
+LeaseFee FLOAT NOT NULL, 
+FOREIGN KEY (Vin) REFERENCES vehicles(Vin)
+);
