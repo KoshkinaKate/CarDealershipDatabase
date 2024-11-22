@@ -1,0 +1,3 @@
+SELECT *
+FROM vehicles
+WHERE Vin = '1HGCM82633A110022';
