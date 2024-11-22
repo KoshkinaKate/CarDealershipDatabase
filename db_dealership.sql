@@ -6,23 +6,31 @@ USE car_dealership;
 
 DROP TABLE IF EXISTS dealership;
 DROP TABLE IF EXISTS vehicles;
+DROP TABLE IF EXISTS inventory;
 
 CREATE TABLE dealerships(
 DealershipID INT AUTO_INCREMENT PRIMARY KEY,
-`Name` VARCHAR(50),
+`Name` VARCHAR(50) NOT NULL,
 Address VARCHAR(50),
 Phone VARCHAR(12)
 );
 
 CREATE TABLE vehicles(
 Vin VARCHAR(30) PRIMARY KEY,
-`Year` DATE,
-Make VARCHAR(20),
-Model VARCHAR(20),
+`Year` DATE NOT NULL,
+Make VARCHAR(20) NOT NULL,
+Model VARCHAR(20) NOT NULL,
 VehicleType VARCHAR(20),
 Color VARCHAR(20),
-Odometer INT,
-Price FLOAT,
-Sold BOOLEAN
+Odometer INT NOT NULL,
+Price FLOAT NOT NULL,
+Sold BOOLEAN 
 );
+
+CREATE TABLE inventory(
+DealershipID INT,
+Vin VARCHAR(30)
+);
+
+CREATE 
 
