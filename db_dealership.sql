@@ -7,6 +7,8 @@ USE car_dealership;
 DROP TABLE IF EXISTS dealership;
 DROP TABLE IF EXISTS vehicles;
 DROP TABLE IF EXISTS inventory;
+DROP TABLE IF EXISTS sales_contracts;
+DROP TABLE IF EXISTS lease_contracts;
 
 CREATE TABLE dealerships(
 DealershipID INT AUTO_INCREMENT PRIMARY KEY,
@@ -32,5 +34,13 @@ DealershipID INT,
 Vin VARCHAR(30)
 );
 
-CREATE 
+CREATE TABLE sales_contracts(
+SaleID INT AUTO_INCREMENT PRIMARY KEY,
+SalesTaxAmount FLOAT,
+RecordingFee FLOAT,
+ProcessingFee FLOAT,
+FOREIGN KEY (Vin) REFERENCES vehicles(Vin)
+);
+
+
 
