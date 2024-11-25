@@ -1,8 +1,67 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+# Dealership Database Management
 
-\f0\fs24 \cf0 my readme}
+## Description of the Project
+
+This MySQL project implements a dealership database management system that allows users to manage dealership inventory, track vehicle sales and leases, and query specific information about dealerships and vehicles. The database is designed to store and retrieve data efficiently, providing functionality for dealership operations such as vehicle inventory management and customer transaction tracking.
+
+## User Stories
+
+The following user stories guided the development of this application:
+
+- **As a dealership manager**, I want to store and retrieve dealership information so that I can manage multiple locations effectively.
+- **As a dealership manager**, I want to track the inventory of vehicles available at each dealership so that customers have accurate options.
+
+## Setup
+
+Instructions on how to set up and run the project using MySQL Server and MySQL Workbench
+
+### Prerequisites
+
+- IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
+- Java SDK: Make sure Java SDK is installed and configured in IntelliJ.
+
+### Setting Up the Database
+
+1. Download or clone the project files.
+
+2. Open MySQL Workbench and connect to your MySQL server.
+
+3. Open the SQL script provided in the project folder.
+
+4. Run the script to create the database, tables, and sample data.
+
+### Once the database is set up, you can run queries using MySQL Workbench or a command-line interface:
+
+Use USE car_dealership; to select the database.
+
+Run specific queries to interact with the database, such as retrieving inventory or tracking sales.
+
+## Technologies Used
+
+- MySQL: Used for database management.
+- MySQL Workbench: Used as the primary tool for creating and querying the database.
+- VS Code: README creation. 
+
+## Demo
+### Question 1
+![Query Example 1](imgs/question1.png)
+### Question 2
+!![Query Example 2](imgs/question2.png)
+### Question 3
+![Query Example 3](imgs/question3.png)
+### Question 4
+![Query Example4](imgs/question4.png)
+### Question 5
+![Query Example 5](imgs/question5.png)
+### Question 6
+![Query Example 6](imgs/question6.png)
+
+
+## Future Work
+
+- Web Interface: Develop a web-based application for easier interaction with the database.
+
+
+## Thanks
+
+- Thank you to Raymond and for continuous support and guidance.
