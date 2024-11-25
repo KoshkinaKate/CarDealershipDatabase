@@ -43,17 +43,23 @@ Run specific queries to interact with the database, such as retrieving inventory
 - VS Code: README creation. 
 
 ## Demo
-### Question 1
+### Question 1 
+Get all dealerships
 ![Query Example 1](imgs/question1.png)
-### Question 2
-!![Query Example 2](imgs/question2.png)
-### Question 3
+### Question 2  
+Find all vehicles for a specific dealership
+![Query Example 2](imgs/question2.png)
+### Question 3 
+Find a car by VIN
 ![Query Example 3](imgs/question3.png)
-### Question 4
+### Question 4  
+Find the dealership where a certain car is located, by VIN
 ![Query Example4](imgs/question4.png)
-### Question 5
+### Question 5 
+ Find all dealerships that have a certain car type (Green Toyota RAV4)
 ![Query Example 5](imgs/question5.png)
-### Question 6
+### Question 6 
+Get all sales information for a specific dealer for a specific date range
 ![Query Example 6](imgs/question6.png)
 
 
