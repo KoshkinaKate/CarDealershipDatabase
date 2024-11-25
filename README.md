@@ -15,11 +15,6 @@ The following user stories guided the development of this application:
 
 Instructions on how to set up and run the project using MySQL Server and MySQL Workbench
 
-### Prerequisites
-
-- IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
-- Java SDK: Make sure Java SDK is installed and configured in IntelliJ.
-
 ### Setting Up the Database
 
 1. Download or clone the project files.
